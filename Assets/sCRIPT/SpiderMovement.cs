@@ -11,6 +11,8 @@ public class SpiderMovement : MonoBehaviour
     float noiseOffsetX = 0;
     float noiseOffsetY = 0;
     public float frequency = 50;
+    Vector2 lastPosition = Vector2.zero;
+    public Transform spiderbody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +29,16 @@ public class SpiderMovement : MonoBehaviour
         float x = Mathf.PerlinNoise(noiseOffsetX, 0) * 2 - 1;
         float y = Mathf.PerlinNoise(0, noiseOffsetY) * 2 - 1;
 
+        Vector2 currentPosition = new(x, y);
+        Vector2 del = currentPosition - lastPosition;
+        float angle = 180*Mathf.Atan2(del.y, del.x) / 3.14156f;
+
+        Vector3 localAngles = spiderbody.localEulerAngles;
+        localAngles.z = angle + 90;
+        spiderbody.localEulerAngles = localAngles;
+
         transform.localPosition = new Vector3(x, y) * 0.5f;
+
+        lastPosition = currentPosition;
     }
 }
