@@ -31,14 +31,23 @@ public class Weapon : MonoBehaviour
     public int bulletsPerBurst = 3;
     int bulletsLeftInBurst;
 
+    float initialZ = 0;
+    float initialPitch = 0;
+    float zOffset = 0;
+    float pitchOffset = 0;
+
     void Awake()
     {
         bulletsLeftInBurst = bulletsPerBurst;
+        initialZ = transform.localPosition.z;
     }
 
     void Update()
     {
         bool isShooting;
+
+        zOffset = Mathf.Lerp(zOffset, 0, 0.03f);
+        pitchOffset = Mathf.Lerp(pitchOffset, 0, 0.03f);
 
         if (shootingMode == ShootingMode.Automatic)
             isShooting = Input.GetMouseButton(0);
@@ -50,11 +59,21 @@ public class Weapon : MonoBehaviour
             bulletsLeftInBurst = bulletsPerBurst;
             Shoot();
         }
+
+        Vector3 localPos = transform.localPosition;
+        localPos.z = initialZ + zOffset;
+        transform.localPosition = localPos;
+
+        Vector3 rot = transform.localRotation.eulerAngles;
+        rot.x = initialPitch + pitchOffset;
+        transform.localEulerAngles = rot;
     }
 
     void Shoot()
     {
         readyToShoot = false;
+        zOffset = -0.2f;
+        pitchOffset = -10;
 
         Vector3 direction = GetShootDirection();
 
