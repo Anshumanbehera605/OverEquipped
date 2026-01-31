@@ -14,8 +14,9 @@ public class PropDestruction : MonoBehaviour
     {
         // 1. Check if the hit was hard enough (so it doesn't break if you just gently touch it)
         // OR check if the object hitting it has a specific tag like "Bullet"
-        if (collision.relativeVelocity.magnitude > collisionThreshold || collision.gameObject.CompareTag("Projectile"))
+        if ( collision.gameObject.CompareTag("Projectile"))
         {
+            //collision.relativeVelocity.magnitude > collisionThreshold ||
             BreakTheObject();
         }
     }
