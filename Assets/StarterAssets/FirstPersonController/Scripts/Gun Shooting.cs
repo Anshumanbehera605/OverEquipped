@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     }
 
     public ShootingMode shootingMode;
+    public ParticleSystem effects;
 
     // References
     public Camera playerCamera;
@@ -98,6 +99,11 @@ public class Weapon : MonoBehaviour
         {
             bulletsLeftInBurst--;
             Invoke(nameof(Shoot), shootDelay);
+        }
+
+        if (effects != null)
+        {
+            effects.Play();
         }
     }
 
