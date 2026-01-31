@@ -36,6 +36,8 @@ public class Weapon : MonoBehaviour
     float zOffset = 0;
     float pitchOffset = 0;
 
+    public ParticleSystem smoke;
+
     void Awake()
     {
         bulletsLeftInBurst = bulletsPerBurst;
@@ -74,6 +76,8 @@ public class Weapon : MonoBehaviour
         readyToShoot = false;
         zOffset = -0.2f;
         pitchOffset = -10;
+
+        if (smoke != null) smoke.Play();
 
         Vector3 direction = GetShootDirection();
 
