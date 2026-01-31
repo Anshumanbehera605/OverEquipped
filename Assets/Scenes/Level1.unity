@@ -2968,6 +2968,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &965529721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965529723}
+  - component: {fileID: 965529722}
+  m_Layer: 0
+  m_Name: Glbl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &965529722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965529721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b22186b097db6744a8545d52330b007a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insectHitEffect: {fileID: 6424076732465889602, guid: 0849ffb1bfc76e042a96dcb8aea8f92a, type: 3}
+--- !u!4 &965529723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965529721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.145273, y: 1.6687026, z: 23.944155}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1021607907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3637,7 @@ GameObject:
   - component: {fileID: 1442575005}
   m_Layer: 0
   m_Name: Spider
-  m_TagString: Untagged
+  m_TagString: Insect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3631,7 +3676,7 @@ MonoBehaviour:
   minY: -0.5
   maxZ: 0
   minZ: 0
-  frequency: 0.1
+  frequency: 1
   spiderbody: {fileID: 28627462109211770}
 --- !u!65 &1442575006
 BoxCollider:
@@ -11413,6 +11458,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1106841849141330636, guid: e99c0270b009839479d79d6e0933044f, type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 6424076732465889602, guid: 0849ffb1bfc76e042a96dcb8aea8f92a, type: 3}
     - target: {fileID: 2891015947676142573, guid: e99c0270b009839479d79d6e0933044f, type: 3}
       propertyPath: m_Name
       value: grenade_launcher_ammo_LPS2
@@ -21851,3 +21900,4 @@ SceneRoots:
   - {fileID: 840024032}
   - {fileID: 1827906134}
   - {fileID: 3629367247514773450}
+  - {fileID: 965529723}

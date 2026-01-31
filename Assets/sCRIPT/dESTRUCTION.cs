@@ -20,7 +20,7 @@ public class PropDestruction : MonoBehaviour
         }
     }
 
-    void BreakTheObject()
+    public void BreakTheObject()
     {
         // 2. Spawn the broken version at the same position and rotation
         GameObject brokenInstance = Instantiate(brokenPrefab, transform.position, transform.rotation);
