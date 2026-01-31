@@ -153,6 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceToNotExplode: 0.5
   timeToExplode: 2
+  explosionRadius: 3
+  explosionForce: 500
+  explosionEffect: {fileID: 1163451204420696, guid: 95175aeab20f4d041860eca89a4ddded, type: 3}
 --- !u!64 &2990130508354310665
 MeshCollider:
   m_ObjectHideFlags: 0
