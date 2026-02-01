@@ -8,15 +8,17 @@ public class PropDestruction : MonoBehaviour
     [Header("Settings")]
     public float breakForce = 10f; // How hard pieces fly apart
     public float collisionThreshold = 5f; // How hard you have to hit it to break
+    public bool isBroken = false;
 
     // This detects when something hits the object
     void OnCollisionEnter(Collision collision)
     {
         // 1. Check if the hit was hard enough (so it doesn't break if you just gently touch it)
         // OR check if the object hitting it has a specific tag like "Bullet"
-        if ( collision.gameObject.CompareTag("Projectile"))
+        if ( collision.gameObject.CompareTag("Projectile") && !isBroken)
         {
             //collision.relativeVelocity.magnitude > collisionThreshold ||
+            isBroken = true;
             BreakTheObject();
         }
     }

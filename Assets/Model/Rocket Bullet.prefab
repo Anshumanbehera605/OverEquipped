@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 478110001628093311}
   - component: {fileID: 4615568233959602979}
   m_Layer: 0
-  m_Name: grenade_launcher_ammo_LPS2
+  m_Name: Rocket Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistanceToNotExplode: 0.5
-  timeToExplode: 1
+  timeToExplode: 0
   explosionRadius: 3
   explosionForce: 500
   explosionEffect: {fileID: 1163451204420696, guid: 95175aeab20f4d041860eca89a4ddded, type: 3}
@@ -300,7 +300,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ImpulseDuration: 0.34
     m_ImpulseType: 1
-    m_DissipationRate: 0.25
+    m_DissipationRate: 0.138
     m_RawSignal: {fileID: 0}
     m_AmplitudeGain: 1
     m_FrequencyGain: 1
@@ -329,4 +329,4 @@ MonoBehaviour:
     m_DissipationMode: 2
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
-  m_DefaultVelocity: {x: 0, y: 0, z: 0}
+  m_DefaultVelocity: {x: 1, y: 1, z: 1}
