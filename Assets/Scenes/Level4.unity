@@ -4056,7 +4056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 17.039978, y: -11.940002}
+  m_AnchoredPosition: {x: 17.04004, y: -11.939941}
   m_SizeDelta: {x: 438.7, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &414623784
@@ -6778,7 +6778,29 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'OPERATIVE: 124-AI (You) LOCATION: The Balcony (Sector 7 - "The High Ground")
+    WEAPON: RPG-7 (Standard Issue)
+
+
+    THE PAYLOAD: One (1) High-Density Polymer
+    Waste Containment Unit (AKA: The Trash Bag). Note: The bag is currently rated
+    "Indestructible" due to the week-old lasagna inside solidifying into concrete.
+
+
+    THE
+    OBJECTIVE: The Sanitation Transport (Garbage Truck) arrives in 2 minutes. You
+    are currently in your pajamas on the second floor. You do not want to walk downstairs.
+
+
+    THE
+    MISSION: Execute a "Ballistic Transfer." Use the RPG''s explosion force to launch
+    the payload across the street and into the Dumpster.
+
+
+    COLLATERAL RISK: The
+    Neighbor''s Vehicle''s are parked in the line of fire. He just waxed it. Do not
+    hit the car. Command estimates a 40% chance of neighborhood war if the car is
+    scratched.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6805,8 +6827,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.5
-  m_fontSizeBase: 25.5
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
