@@ -300,7 +300,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_ImpulseDuration: 0.34
     m_ImpulseType: 1
-    m_DissipationRate: 0.25
+    m_DissipationRate: 0.138
     m_RawSignal: {fileID: 0}
     m_AmplitudeGain: 1
     m_FrequencyGain: 1
@@ -329,4 +329,4 @@ MonoBehaviour:
     m_DissipationMode: 2
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
-  m_DefaultVelocity: {x: 1, y: -1, z: 1}
+  m_DefaultVelocity: {x: 1, y: 1, z: 1}
