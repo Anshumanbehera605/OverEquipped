@@ -13,6 +13,7 @@ public class SpiderMovement : MonoBehaviour
     public float frequency = 50;
     Vector2 lastPosition = Vector2.zero;
     public Transform spiderbody;
+    public Level1Manager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,5 +41,10 @@ public class SpiderMovement : MonoBehaviour
         transform.localPosition = new Vector3(x, y) * 0.5f;
 
         lastPosition = currentPosition;
+    }
+
+    void OnDestroy()
+    {
+        gameManager.GameWon();
     }
 }

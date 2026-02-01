@@ -507,6 +507,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &59870716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -997,6 +998,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &86765784
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1388,6 +1390,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &100266442
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1895,6 +1898,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 7973465612421562204, guid: 6837a6cab1d63c14694ae2a0ff2c0a9b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &203981585
 Transform:
   m_ObjectHideFlags: 0
@@ -1943,6 +1947,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2906690471010021599, guid: ec97a5b2529101a4aba8a4197c3f5833, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &296710170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2325,6 +2330,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2906690471010021599, guid: ec97a5b2529101a4aba8a4197c3f5833, type: 3}
   breakForce: 2
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &433266933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2404,6 +2410,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e324fdf07d59e6841b86cb13debf182f, type: 3}
   m_PrefabInstance: {fileID: 2105874394}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &482312115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395077, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+  m_PrefabInstance: {fileID: 497271221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &482312118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482312115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: -1
+  m_Gain: 1
+  m_Use2DDistance: 1
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1.49
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!1 &483579123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483579125}
+  - component: {fileID: 483579124}
+  m_Layer: 0
+  m_Name: GaymManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &483579124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483579123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab72b14115d8fa144bb786a444d8904e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tvProp: {fileID: 511672724}
+--- !u!4 &483579125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483579123}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.37841, y: 1.7861339, z: 26.242584}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484383824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +2519,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &484383826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2696,8 +2776,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8762286023885395077, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 482312118}
   m_SourcePrefab: {fileID: 100100000, guid: 9c489a8547f4d9e4387da15a4ff82c81, type: 3}
+--- !u!1 &502835751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4785804681063022095, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
+  m_PrefabInstance: {fileID: 840024032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &511672718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2949,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &520105729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,6 +3004,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4528772774675895072, guid: f4d71136abecd104cb87a929661c0e67, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &520105732
 Transform:
   m_ObjectHideFlags: 0
@@ -2963,6 +3053,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2906690471010021599, guid: ec97a5b2529101a4aba8a4197c3f5833, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &569851630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3589,6 +3680,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &653171002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,6 +3735,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6808727217977119897, guid: bd9f977824b62724a8a277db6d9d0d24, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &653171005
 Transform:
   m_ObjectHideFlags: 0
@@ -3909,6 +4002,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 3519734956464834090, guid: 66c1a2a9b0fc50e46a6f911759932609, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &782225821
 Transform:
   m_ObjectHideFlags: 0
@@ -4300,7 +4394,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1189407807}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4785804681063022095, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1365943577}
   m_SourcePrefab: {fileID: 100100000, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
 --- !u!1 &896709796
 GameObject:
@@ -4492,6 +4589,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6538052776646210183, guid: 5e66b16bf0322f649bfeca2e429979ac, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &965093524
 Transform:
   m_ObjectHideFlags: 0
@@ -4588,6 +4686,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &1021607909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4758,6 +4857,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2620133175761796385, guid: eb26b5534a679eb45b95037283f168bb, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &1087113049
 Transform:
   m_ObjectHideFlags: 0
@@ -5174,6 +5274,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
   m_PrefabInstance: {fileID: 840024032}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1365943577
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502835751}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1442575003
 GameObject:
   m_ObjectHideFlags: 0
@@ -5187,6 +5384,7 @@ GameObject:
   - component: {fileID: 1442575007}
   - component: {fileID: 1442575006}
   - component: {fileID: 1442575005}
+  - component: {fileID: 1442575009}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Insect
@@ -5228,8 +5426,9 @@ MonoBehaviour:
   minY: -0.5
   maxZ: 0
   minZ: 0
-  frequency: 1
+  frequency: 0.1
   spiderbody: {fileID: 28627462109211770}
+  gameManager: {fileID: 483579124}
 --- !u!65 &1442575006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5249,8 +5448,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.9613016, y: 2.8728511, z: 1.2533073}
+  m_Center: {x: -0.061678883, y: -0.05445648, z: 0.12665367}
 --- !u!23 &1442575007
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5304,6 +5503,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442575003}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1442575009
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442575003}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1588845039
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,6 +5584,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 7704748313131366257, guid: 792c71aa40e73044c8befcab529a466e, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &1588845042
 Transform:
   m_ObjectHideFlags: 0
@@ -5409,6 +5636,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &1593443076
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5580,6 +5808,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 3519734956464834090, guid: 66c1a2a9b0fc50e46a6f911759932609, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &1651203165
 Transform:
   m_ObjectHideFlags: 0
@@ -6204,6 +6433,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2906690471010021599, guid: ec97a5b2529101a4aba8a4197c3f5833, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &1805998225
 Transform:
   m_ObjectHideFlags: 0
@@ -6609,6 +6839,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1812407062
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7054,6 +7285,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &1905398964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7206,6 +7438,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &1905493608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7910,6 +8143,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &2120460507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8059,6 +8293,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2691852339022865698, guid: a4c3b1f73376acc4dbf4e9f88deeee53, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &2126235976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11846,6 +12081,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &2384833557437471903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11883,6 +12119,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &2393647452946784072
 Transform:
   m_ObjectHideFlags: 0
@@ -14556,6 +14793,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &3981255750422933129
 Transform:
   m_ObjectHideFlags: 0
@@ -14783,6 +15021,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!137 &4086457517094112359
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -15846,6 +16085,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &4668375362765515757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16028,6 +16268,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &4828884587902547132
 Transform:
   m_ObjectHideFlags: 0
@@ -16173,6 +16414,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &4851259721363692101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16306,6 +16548,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &4895486664003821960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16547,6 +16790,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &4961302204041207233
 GameObject:
   m_ObjectHideFlags: 0
@@ -16583,6 +16827,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &4961302204041207235
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16620,6 +16865,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &4966320531129179485
 Transform:
   m_ObjectHideFlags: 0
@@ -16695,6 +16941,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &4994967360544208289
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16780,6 +17027,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &5043987323417265651
 GameObject:
   m_ObjectHideFlags: 0
@@ -16834,6 +17082,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &5083061717229766065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17927,6 +18176,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &5426739719244011160
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18291,6 +18541,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 4506934398024790492, guid: b1f3faddf4c812248b18488bc8bb049f, type: 3}
   breakForce: 100
   collisionThreshold: 50
+  isBroken: 0
 --- !u!65 &5698170564233924533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18733,6 +18984,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &5793865834237358636
 GameObject:
   m_ObjectHideFlags: 0
@@ -18980,6 +19232,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &5971632211880562817
 Transform:
   m_ObjectHideFlags: 0
@@ -19392,6 +19645,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &6176829636551229670
 Transform:
   m_ObjectHideFlags: 0
@@ -19513,6 +19767,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &6232404725856704993
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19664,6 +19919,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &6366669063841774597
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19782,6 +20038,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &6473912805457397349
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19819,6 +20076,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &6478136097554906124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20099,6 +20357,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &6716821612562718198
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20189,6 +20448,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &6772957918980825423
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20360,6 +20620,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &6790188431673467551
 GameObject:
   m_ObjectHideFlags: 0
@@ -20461,6 +20722,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &6895168741426312890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20842,6 +21104,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &7106186540787383941
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20887,6 +21150,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &7111594762337826924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21271,6 +21535,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &7388815867552369566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21373,6 +21638,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7401701013964026794
 GameObject:
   m_ObjectHideFlags: 0
@@ -21430,6 +21696,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7404742044090318943
 GameObject:
   m_ObjectHideFlags: 0
@@ -21639,6 +21906,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &7537957552848926165
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21704,6 +21972,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7562741228227103774
 GameObject:
   m_ObjectHideFlags: 0
@@ -21761,6 +22030,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!137 &7608094117367225083
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -21872,6 +22142,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7628762754248108662
 GameObject:
   m_ObjectHideFlags: 0
@@ -22268,6 +22539,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7817350691556844792
 GameObject:
   m_ObjectHideFlags: 0
@@ -22304,6 +22576,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &7817350691556844794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22341,6 +22614,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &7820970028559757998
 Transform:
   m_ObjectHideFlags: 0
@@ -22401,6 +22675,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &7835597058416183571
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22485,6 +22760,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &7863217141575820902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22522,6 +22798,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 0}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &7865459195712136204
 GameObject:
   m_ObjectHideFlags: 0
@@ -22598,6 +22875,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &7897649995718317227
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22737,6 +23015,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &7934128587637421421
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22940,6 +23219,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &7984805481959476299
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22985,6 +23265,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &8036295498278078513
 Transform:
   m_ObjectHideFlags: 0
@@ -23412,6 +23693,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8186407639642728280
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23593,6 +23875,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &8201796956502864995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23693,6 +23976,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &8215220446129121661
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23738,6 +24022,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &8235096057494587626
 Transform:
   m_ObjectHideFlags: 0
@@ -23790,6 +24075,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &8237189589030341950
 Transform:
   m_ObjectHideFlags: 0
@@ -23842,6 +24128,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8242094734020457731
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23939,6 +24226,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8264280428354993146
 GameObject:
   m_ObjectHideFlags: 0
@@ -24205,6 +24493,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &8357418459463905404
 Transform:
   m_ObjectHideFlags: 0
@@ -24410,6 +24699,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &8474196388944380185
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24740,6 +25030,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8603723079461831632
 GameObject:
   m_ObjectHideFlags: 0
@@ -24829,6 +25120,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &8632226961034931370
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24955,6 +25247,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8668619764469970757
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25120,6 +25413,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &8719942019399126178
 Transform:
   m_ObjectHideFlags: 0
@@ -25172,6 +25466,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8726291405666679664
 GameObject:
   m_ObjectHideFlags: 0
@@ -25436,6 +25731,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8839265606463188395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25518,6 +25814,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &8845419712118330902
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25563,6 +25860,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8847456288349666432
 GameObject:
   m_ObjectHideFlags: 0
@@ -25732,6 +26030,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8861712577590762307
 GameObject:
   m_ObjectHideFlags: 0
@@ -25789,6 +26088,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &8869290897164288776
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25929,6 +26229,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!137 &8901004253057932887
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -26106,6 +26407,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8920888798478954929
 GameObject:
   m_ObjectHideFlags: 0
@@ -26167,6 +26469,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &8926451335909058792
 GameObject:
   m_ObjectHideFlags: 0
@@ -26260,6 +26563,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!65 &8976507492860924463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26338,6 +26642,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8992276408227808795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26492,6 +26797,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &9046463606691750388
 Transform:
   m_ObjectHideFlags: 0
@@ -26590,6 +26896,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &9066730000909185093
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26753,6 +27060,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &9094185539572792032
 GameObject:
   m_ObjectHideFlags: 0
@@ -26837,6 +27145,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &9095209342535181651
 GameObject:
   m_ObjectHideFlags: 0
@@ -26894,6 +27203,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &9117170799554271164
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26939,6 +27249,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &9117876886439321567
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27021,6 +27332,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!33 &9131801218248884562
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27066,6 +27378,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1 &9140602247355210827
 GameObject:
   m_ObjectHideFlags: 0
@@ -27123,6 +27436,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 2254976793812813544, guid: 1d9eacc8d82ff224eadbba01956033b6, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!4 &9155670278905148883
 Transform:
   m_ObjectHideFlags: 0
@@ -27222,3 +27536,4 @@ SceneRoots:
   - {fileID: 782225821}
   - {fileID: 1651203165}
   - {fileID: 511672723}
+  - {fileID: 483579125}

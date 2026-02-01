@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     }
 
     public ShootingMode shootingMode;
+    AudioSource shootSound;
 
     // References
     public Camera playerCamera;
@@ -42,6 +43,11 @@ public class Weapon : MonoBehaviour
     {
         bulletsLeftInBurst = bulletsPerBurst;
         initialZ = transform.localPosition.z;
+    }
+
+    void Start()
+    {
+        shootSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -78,6 +84,7 @@ public class Weapon : MonoBehaviour
         pitchOffset = -10;
 
         if (smoke != null) smoke.Play();
+        if (shootSound != null) shootSound.Play();
 
         Vector3 direction = GetShootDirection();
 

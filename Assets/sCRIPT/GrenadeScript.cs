@@ -1,3 +1,5 @@
+using Cinemachine;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -11,17 +13,20 @@ public class GrenadeScript : MonoBehaviour
 
     [Header("Effects")]
     public GameObject explosionEffect;
+    public CinemachineImpulseSource impulseSource;
 
     float distanceTravelled = 0f;
     bool shouldExplode = false;
     bool collided = false;
     bool exploded = false;
+    AudioSource source;
 
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        source = GetComponent<AudioSource>();
 
         // Explosion visual (child) OFF at start
         if (transform.childCount > 0)
@@ -61,6 +66,14 @@ public class GrenadeScript : MonoBehaviour
         {
             // Optional: bounce or ignore
             Debug.Log("Grenade collision ignored (too close)");
+            Collider[] hits = Physics.OverlapSphere(transform.position, 1f);
+            foreach (Collider hit in hits)
+            {
+                if (hit.gameObject.CompareTag("Insect"))
+                {
+                    Destroy(hit.gameObject);
+                }
+            }
         }
     }
 
@@ -68,6 +81,10 @@ public class GrenadeScript : MonoBehaviour
     {
         if (exploded) return;
         exploded = true;
+
+        if (source != null) source.Play();
+        
+        impulseSource.GenerateImpulse();
 
         Debug.Log("Exploding");
 
@@ -95,12 +112,6 @@ public class GrenadeScript : MonoBehaviour
                     explosionRadius
                 );
             }
-
-            // Kill insects / enemies
-            if (hit.CompareTag("Insect"))
-            {
-                Destroy(hit.gameObject);
-            }
         }
 
         Collider[] hits1 = Physics.OverlapSphere(transform.position, explosionRadius / 2);
@@ -110,12 +121,6 @@ public class GrenadeScript : MonoBehaviour
             if (hitbody != null)
             {
                 hitbody.BreakTheObject();
-            }
-
-            // Kill insects / enemies
-            if (hit.CompareTag("Insect"))
-            {
-                Destroy(hit.gameObject);
             }
         }
 
