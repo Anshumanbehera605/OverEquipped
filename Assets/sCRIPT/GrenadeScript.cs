@@ -19,6 +19,7 @@ public class GrenadeScript : MonoBehaviour
     bool shouldExplode = false;
     bool collided = false;
     bool exploded = false;
+    public bool isRocket = false;
     AudioSource source;
 
     Rigidbody rb;
@@ -56,6 +57,8 @@ public class GrenadeScript : MonoBehaviour
         if (collided) return;
 
         collided = true;
+        
+        if (isRocket) Explode();
 
         if (distanceTravelled > maxDistanceToNotExplode)
         {
