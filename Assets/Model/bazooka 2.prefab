@@ -129,6 +129,7 @@ MonoBehaviour:
   winTag: WinTarget
   loseTag: LoseTarget
   damageToDeal: 100
+  isRocket: 1
 --- !u!64 &8914089258814655495
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public string tagToMove = "LoseTarget"; // Set this to "Cat" or "Player" (whatever tag the object has)
     public float moveForce = 500f;          // How hard to push it
     public Vector3 pushDirection = new Vector3(0, 1, 1); // Direction: Up and Forward
+    public Level3Manager level3Manager;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        level3Manager.GameWon();
         // 1. Find the object you want to move (The Cat/Player)
         GameObject objectToMove = GameObject.FindGameObjectWithTag(tagToMove);
 
