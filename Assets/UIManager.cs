@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public GameObject gameWon;
     public GameObject gameOver;
     public GameObject instruction;
+    public GameObject loreScreen;
     public int currentLevel;
     public String hintText;
     public TextMeshProUGUI hintBox;
@@ -17,7 +18,8 @@ public class UIManager : MonoBehaviour
     {
         gameWon.SetActive(false);
         gameOver.SetActive(false);
-        instruction.SetActive(true);
+        instruction.SetActive(false);
+        loreScreen.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -27,6 +29,11 @@ public class UIManager : MonoBehaviour
         if (Input.GetKey(KeyCode.H))
         {
             hintBox.text = hintText;
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            loreScreen.SetActive(false);
+            instruction.SetActive(true);
         }
     }
 
