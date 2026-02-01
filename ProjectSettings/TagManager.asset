@@ -12,6 +12,8 @@ TagManager:
   - Pickup
   - Dump
   - Trash
+  - LoseTarget
+  - WinTarget
   layers:
   - Default
   - TransparentFX
