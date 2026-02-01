@@ -122,7 +122,9 @@ MonoBehaviour:
   explosionForce: 500
   explosionEffect: {fileID: 1159615438314744, guid: 14cf9b5bc3f9faf4ca5ce80298f43111, type: 3}
   impulseSource: {fileID: 75741903655571798}
-  isRocket: 1
+  winTag: WinTarget
+  loseTag: LoseTarget
+  damageToDeal: 100
 --- !u!64 &8914089258814655495
 MeshCollider:
   m_ObjectHideFlags: 0

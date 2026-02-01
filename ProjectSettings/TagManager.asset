@@ -10,6 +10,8 @@ TagManager:
   - Insect
   - FxTemporaire
   - Pickup
+  - WinTarget
+  - LoseTarget
   layers:
   - Default
   - TransparentFX
