@@ -210,6 +210,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &42608927
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -649,6 +650,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 5267802125316963904, guid: 474f33486f1e05148b2a51a09fb8383d, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &143771788
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2005,6 +2007,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &382849938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,6 +2314,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &412207759
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2657,6 +2661,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &445552473
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2748,6 +2753,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &516000267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2790,6 +2796,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &527501723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3092,6 +3099,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &545772463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3178,6 +3186,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 5267802125316963904, guid: 474f33486f1e05148b2a51a09fb8383d, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &545772466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3893,75 +3902,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1716842359454501035, guid: e9776a07ecb2231488f60d0bb6c9c82c, type: 3}
---- !u!1001 &637188804
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1911280067}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.6666665
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-      propertyPath: m_Name
-      value: Nader's Grenade Launcher
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 70804012f66a4f84d91155a32520587b, type: 3}
 --- !u!64 &638633131
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4422,6 +4362,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &702171052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4891,6 +4832,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &755951823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4933,6 +4875,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &756470873
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4975,6 +4918,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &768918049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5017,6 +4961,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &782260663
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5059,6 +5004,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &827252877
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5667,11 +5613,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2865104911859505335, guid: e9776a07ecb2231488f60d0bb6c9c82c, type: 3}
---- !u!4 &857110234 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70804012f66a4f84d91155a32520587b, type: 3}
-  m_PrefabInstance: {fileID: 637188804}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &903260166
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6814,6 +6755,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1002432407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6922,6 +6864,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 5267802125316963904, guid: 474f33486f1e05148b2a51a09fb8383d, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1003466780
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7227,12 +7170,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 574863501926853685, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: bulletSpeed
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 574863501926853685, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: bulletPrefab
       value: 
-      objectReference: {fileID: 2891015947676142573, guid: e99c0270b009839479d79d6e0933044f, type: 3}
+      objectReference: {fileID: 6646242379663441240, guid: 5af9d2952cf6a0e4d9a91c09fe970f0a, type: 3}
     - target: {fileID: 574863501926853685, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: playerCamera
       value: 
@@ -7283,15 +7226,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2969258874767372897, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.082
+      value: -0.473
       objectReference: {fileID: 0}
     - target: {fileID: 2969258874767372897, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.123
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 2969258874767372897, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.874
+      value: 1.219
       objectReference: {fileID: 0}
     - target: {fileID: 3169728200943261506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_Enabled
@@ -7302,16 +7245,24 @@ PrefabInstance:
       value: PlayerCapsule (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23
+      value: 0.59
       objectReference: {fileID: 0}
     - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.47
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7338,7 +7289,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7377293473408929506, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 857110234}
+      addedObject: {fileID: 543450652818618954}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3cafe1f1b1774d418713c13e494d29a, type: 3}
 --- !u!64 &1016227813
@@ -7405,6 +7356,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1047782855
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8317,6 +8269,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 7860726738184040246, guid: d31a95f051a6bea49bb65c850ba6d766, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &1130285018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8894,6 +8847,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1207969550
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8958,6 +8912,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &1225144257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9243,6 +9198,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &1240358773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10538,6 +10494,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1315414366
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10624,6 +10581,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &1358657017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10666,6 +10624,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1368623272
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10774,6 +10733,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1390291327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11201,6 +11161,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &1503181318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11524,6 +11485,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1512547443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11615,6 +11577,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1538864101
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11728,6 +11691,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1553092446
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11907,6 +11871,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &1630349503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11949,6 +11914,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1635182514
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12035,6 +12001,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1647686916
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12489,6 +12456,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1773890845
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13541,6 +13509,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &1840362699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13583,6 +13552,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!54 &1857907248
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13625,6 +13595,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8294800205805668709, guid: 2b5634cbf3ca40d4b8791665e3cd7d5b, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &1859483443
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14747,6 +14718,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 8411388043438823071, guid: 0554886059a472042adb2dbcc0d38ff7, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &2012411531
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15163,6 +15135,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 7860726738184040246, guid: d31a95f051a6bea49bb65c850ba6d766, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!1001 &2047496939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15788,6 +15761,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &2130612491
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15852,6 +15826,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 6885090242528394011, guid: 3e9770e068f4bed47b0b765843142516, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!64 &2137523991
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16047,6 +16022,22 @@ Transform:
   - {fileID: 2877672604425159049}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &543450652818618954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148827775216}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
+  m_LocalPosition: {x: -0.516, y: 0.645, z: -1.177}
+  m_LocalScale: {x: 1.49, y: 1.49, z: 1.49}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 9013050717526801070}
+  m_Father: {fileID: 1911280067}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
 --- !u!33 &568293731874688181
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16100,6 +16091,22 @@ GameObject:
   - component: {fileID: 543450652629772251}
   m_Layer: 0
   m_Name: parco con fontana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &919132148827775216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543450652818618954}
+  m_Layer: 0
+  m_Name: Bazooka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16427,6 +16434,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!23 &2258229798482184929
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446222148881904694}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -1148610527148430677, guid: 127edd5049371214baafdca843257545, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!23 &2320798170693838917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16472,6 +16524,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2446222148881904694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9013050717526801070}
+  - component: {fileID: 3882279077756307655}
+  - component: {fileID: 2258229798482184929}
+  m_Layer: 0
+  m_Name: Bazooka.001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2492335782113639684
 GameObject:
   m_ObjectHideFlags: 0
@@ -16961,6 +17031,14 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2492335782113639684}
   m_Mesh: {fileID: -6055198416563499281, guid: 737d633dbfb54394ea92458c54081c04, type: 3}
+--- !u!33 &3882279077756307655
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446222148881904694}
+  m_Mesh: {fileID: 7990416959494219189, guid: 127edd5049371214baafdca843257545, type: 3}
 --- !u!33 &4160100483960633830
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18127,6 +18205,7 @@ MonoBehaviour:
   brokenPrefab: {fileID: 7671175042223992069, guid: fb7788b5e0a37fd499d55d38f52ea749, type: 3}
   breakForce: 10
   collisionThreshold: 5
+  isBroken: 0
 --- !u!23 &8487560815332611519
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18275,6 +18354,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 543450652629772251}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &9013050717526801070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446222148881904694}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450652818618954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9185849405784889953
 PrefabInstance:
