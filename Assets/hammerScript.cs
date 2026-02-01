@@ -10,7 +10,7 @@ public class hammerScript : MonoBehaviour
     public GameObject child;
     public bool isDestroktor = true;
 
-    bool swinging;
+    public bool swinging;
 
     void Start()
     {
