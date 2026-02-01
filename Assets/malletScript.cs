@@ -3,6 +3,7 @@ using UnityEngine;
 public class malletScript : MonoBehaviour
 {
     public hammerScript hammerScript;
+    public Level2Manager level2Manager;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +21,8 @@ public class malletScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Insect") && hammerScript.swinging)
         {
-            print("GameWon");
+            collision.gameObject.GetComponent<toasterGoBooom>().Boom();
+            level2Manager.GameWon();
         }
     }
 }
