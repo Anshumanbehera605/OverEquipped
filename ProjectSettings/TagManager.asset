@@ -8,6 +8,8 @@ TagManager:
   - Target
   - Projectile
   - Insect
+  - FxTemporaire
+  - Pickup
   layers:
   - Default
   - TransparentFX

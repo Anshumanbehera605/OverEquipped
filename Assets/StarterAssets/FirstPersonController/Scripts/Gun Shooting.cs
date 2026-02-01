@@ -12,6 +12,9 @@ public class Weapon : MonoBehaviour
     }
 
     public ShootingMode shootingMode;
+
+    [Header("Audio Settings")]
+    public AudioClip fireSoundClip; // Drag your gunshot sound here
     AudioSource shootSound;
 
     // References
@@ -32,6 +35,7 @@ public class Weapon : MonoBehaviour
     public int bulletsPerBurst = 3;
     int bulletsLeftInBurst;
 
+    // Recoil / Visuals
     float initialZ = 0;
     float initialPitch = 0;
     float zOffset = 0;
@@ -54,20 +58,24 @@ public class Weapon : MonoBehaviour
     {
         bool isShooting;
 
+        // Visual Recoil Recovery
         zOffset = Mathf.Lerp(zOffset, 0, 0.03f);
         pitchOffset = Mathf.Lerp(pitchOffset, 0, 0.03f);
 
+        // Input Check
         if (shootingMode == ShootingMode.Automatic)
             isShooting = Input.GetMouseButton(0);
         else
             isShooting = Input.GetMouseButtonDown(0);
 
+        // Shooting Logic
         if (readyToShoot && isShooting)
         {
             bulletsLeftInBurst = bulletsPerBurst;
             Shoot();
         }
 
+        // Apply Visual Recoil
         Vector3 localPos = transform.localPosition;
         localPos.z = initialZ + zOffset;
         transform.localPosition = localPos;
@@ -80,31 +88,45 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         readyToShoot = false;
+
+        // Recoil Kick
         zOffset = -0.2f;
         pitchOffset = -10;
 
+        // Effects
         if (smoke != null) smoke.Play();
-        if (shootSound != null) shootSound.Play();
+
+        // SOUND LOGIC ADDED HERE
+        if (shootSound != null && fireSoundClip != null)
+        {
+            shootSound.PlayOneShot(fireSoundClip);
+        }
 
         Vector3 direction = GetShootDirection();
 
+        // Instantiate Bullet
         GameObject bullet = Instantiate(
             bulletPrefab,
             bulletSpawnPoint.position,
             Quaternion.identity
         );
 
+        // Rotate bullet to face direction
         bullet.transform.forward = direction.normalized;
 
+        // Add Force
         bullet.GetComponent<Rigidbody>().AddForce(
             direction.normalized * bulletSpeed,
             ForceMode.Impulse
         );
 
+        // Cleanup
         StartCoroutine(DestroyBullet(bullet));
 
+        // Delay next shot
         Invoke(nameof(ResetShot), shootDelay);
 
+        // Burst Logic
         if (shootingMode == ShootingMode.Burst && bulletsLeftInBurst > 1)
         {
             bulletsLeftInBurst--;
@@ -126,6 +148,7 @@ public class Weapon : MonoBehaviour
         RaycastHit hit;
         Vector3 targetPoint;
 
+        // Check where the camera is looking
         if (Physics.Raycast(ray, out hit))
             targetPoint = hit.point;
         else
@@ -133,6 +156,7 @@ public class Weapon : MonoBehaviour
 
         Vector3 direction = targetPoint - bulletSpawnPoint.position;
 
+        // Calculate Spread
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
 
@@ -142,6 +166,9 @@ public class Weapon : MonoBehaviour
     IEnumerator DestroyBullet(GameObject bullet)
     {
         yield return new WaitForSeconds(bulletLifeTime);
-        Destroy(bullet);
+        if (bullet != null)
+        {
+            Destroy(bullet);
+        }
     }
 }
