@@ -5,6 +5,7 @@ public class Level1Manager : MonoBehaviour
     public PropDestruction tvProp;
     bool gameOver = false;
     bool gameWon = false;
+    public UIManager uIManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,6 +22,8 @@ public class Level1Manager : MonoBehaviour
     {
         if (gameWon) return;
         gameOver = true;
+        Cursor.lockState = CursorLockMode.None;
+        uIManager.GameLost();
         print("Gameover");
     }
 
@@ -28,6 +31,8 @@ public class Level1Manager : MonoBehaviour
     {
         if (gameOver) return;
         gameWon = true;
+        Cursor.lockState = CursorLockMode.None;
+        uIManager.GameWon();
         print("gamewon");
     }
 }

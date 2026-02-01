@@ -85,6 +85,7 @@ public class hammerScript : MonoBehaviour
             // PLAY HIT SOUND
             if (audioSource != null && hitSound != null)
             {
+                audioSource.pitch = Random.Range(0.9f, 1.1f);
                 audioSource.PlayOneShot(hitSound);
             }
         }
