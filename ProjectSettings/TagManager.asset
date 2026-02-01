@@ -10,6 +10,8 @@ TagManager:
   - Insect
   - FxTemporaire
   - Pickup
+  - Dump
+  - Trash
   layers:
   - Default
   - TransparentFX
