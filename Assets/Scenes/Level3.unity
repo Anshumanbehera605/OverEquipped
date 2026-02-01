@@ -9647,6 +9647,8 @@ PrefabInstance:
     - {fileID: -4496702381009207674, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
     - {fileID: -1614310083323796818, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
     - {fileID: -1373218358948662390, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
+    - {fileID: -1193311482352315953, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
+    - {fileID: -3279417611783690996, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -4832738058346479652, guid: 6dd4d2baa61d43a4491ebc9aa3e5db57, type: 3}
@@ -12835,7 +12837,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1148610527148430677, guid: 127edd5049371214baafdca843257545, type: 3}
+  - {fileID: -8911499558433741390, guid: 6ee04d84714db4e4c901c77a48144d71, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

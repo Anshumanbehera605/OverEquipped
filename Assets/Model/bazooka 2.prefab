@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 86ac39d2f04dfe54bbec69a5bf36803d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7126732280898164573, guid: 194cbde8fd51b3646ac7f5e5821c2698, type: 3}
     - target: {fileID: 919132149155446097, guid: 86ac39d2f04dfe54bbec69a5bf36803d, type: 3}
       propertyPath: m_Name
       value: bazooka 2
