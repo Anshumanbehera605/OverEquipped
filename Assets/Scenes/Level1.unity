@@ -8268,7 +8268,32 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'OPERATIVE: 124-AI (You) LOCATION: The Living Room (Sector 4) WEAPON: M32
+    Rotary Grenade Launcher (High Explosive)
+
+
+    INTEL: We have a Code Black situation.
+    A hostile arachnid (Target: "Legs") has breached the perimeter and is currently
+    occupying a strategic asset.
+
+
+    THE ASSET: A brand new, limited-edition 8K
+    Ultra-HD Curved OLED Television. Retail value: $15,000. It is the homeowner''s
+    pride and joy.
+
+
+    THE MISSION: Eliminate the spider immediately.
+
+
+    THE
+    CATCH: Command has equipped you with a 40mm Grenade Launcher. We understand this
+    is "overkill." We do not care. The spider must die.
+
+
+    Secondary Objective:
+    Try not to vaporize the TV. (Optional: "LOL Good Luck")
+
+    Press "E" To Continue......'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8295,8 +8320,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.5
-  m_fontSizeBase: 25.5
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15407,7 +15432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 17.039978, y: -11.940002}
+  m_AnchoredPosition: {x: 17.04004, y: -11.939941}
   m_SizeDelta: {x: 438.7, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &3694273695565594340

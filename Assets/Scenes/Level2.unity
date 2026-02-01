@@ -1004,7 +1004,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'OPERATIVE: 124A LOCATION: The Kitchenette (Sector 2) WEAPON: "The Persuader"
+    (Super-Sonic Tactical Sledgehammer)
+
+
+    THE VIP: "The Client." He is currently
+    seated at the dining table. He has not eaten in 8 hours. His hostility levels
+    are rising rapidly ("Hangry" Status: CRITICAL).
+
+
+    THE SITUATION: A mechanical
+    failure has occurred. Two slices of Whole Wheat are jammed inside the toaster.
+    The ejection mechanism has failed.
+
+
+    THE MISSION: Perform "Percussive Maintenance."
+    Use the Sledgehammer to dislodge the bread immediately.
+
+
+    TIME LIMIT: You
+    have limited time before the VIP throws a tantrum. Failure is not an option.
+
+
+    Press
+    "E" to Continue......'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1031,8 +1054,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.5
-  m_fontSizeBase: 25.5
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9293,7 +9316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 17.039978, y: -11.940002}
+  m_AnchoredPosition: {x: 17.04004, y: -11.939941}
   m_SizeDelta: {x: 438.7, y: 118.57}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1617974938
